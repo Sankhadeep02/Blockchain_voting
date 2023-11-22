@@ -58,6 +58,3 @@ A decentralized voting system based on Ethereum blockchain technology.
    ```
 
    > Note: Use `truffle migrate --reset` for re-deployments
-
-
-
