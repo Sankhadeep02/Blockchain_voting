@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">Voting</a></li>
+            <li><a href="#">Authentication</a></li>
+            <li><a href="#">Result</a></li>
+        </ul>
+    </nav>
+
+    <!-- Account Address -->
+    <div class="account-address">
+        <p>Account Address: 1234567890</p>
+    </div>
+
+    <!-- About Admin Section -->
+    <section class="about-admin">
+        <h2>About Admin</h2>
+        <form>
+            <div class="form-group">
+                <label for="adminName">Admin Name:</label>
+                <input type="text" id="adminName" name="adminName" placeholder="Enter admin name">
+            </div>
+
+            <div class="form-group">
+                <label for="adminEmail">Admin Email:</label>
+                <input type="email" id="adminEmail" name="adminEmail" placeholder="Enter admin email">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- About Election Section -->
+    <section class="about-election">
+        <h2>About Election</h2>
+        <form>
+            <div class="form-group">
+                <label for="electionTitle">Election Title:</label>
+                <input type="text" id="electionTitle" name="electionTitle" placeholder="Enter election title">
+            </div>
+
+            <div class="form-group">
+                <label for="organizationName">Organization Name:</label>
+                <input type="text" id="organizationName" name="organizationName" placeholder="Enter organization name">
+            </div>
+
+            <!-- Add more form fields as needed -->
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Button to Start Election -->
+    <div>
+        <button class="start-election">Start Election</button>
+    </div>
+
+    <!-- Election Status -->
+    <div class="election-status">
+        <p>Election Status: <span id="status">not started </span></p>
+    </div>
+
+</body>
+</html>
