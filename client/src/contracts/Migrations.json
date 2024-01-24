@@ -59,7 +59,7 @@
   "sourceMap": "69:360:1:-;;;246:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;246:58:1;286:10;278:5;;:18;;;;;;;;;;;;;;;;;;69:360;;;;;;",
   "deployedSourceMap": "69:360:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:360:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;123:39;;;:::i;:::-;;;;;;;;;;;;;;;;;;;96:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;312:114;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;312:114:1;;;;;;;;;;;;;;;;;:::i;:::-;;123:39;;;;:::o;96:20::-;;;;;;;;;;;;;:::o;312:114::-;222:5;;;;;;;;;;;208:19;;:10;:19;;;204:26;;;409:9;382:24;:36;;;;204:26;312:114;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.8.0;\r\n\r\ncontract Migrations {\r\n    address public owner;\r\n    uint256 public last_completed_migration;\r\n\r\n    modifier restricted() {\r\n        if (msg.sender == owner) _;\r\n    }\r\n\r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    function setCompleted(uint256 completed) public restricted {\r\n        last_completed_migration = completed;\r\n    }\r\n}\r\n",
-  "sourcePath": "D:\\Projects\\Clone\\Dvoting_test\\contracts\\Migrations.sol",
+  "sourcePath": "D:\\Projects\\Clone\\Blockchain_voting\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -954,9 +954,17 @@
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xBFf8EcaD9C650086DC254596343843d3b3828885",
+      "transactionHash": "0x1119dfd272597b2760634bb587a03d9a3da3996f8c8c2821241febf29842b68a"
+    }
+  },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-11-22T14:52:11.480Z",
+  "updatedAt": "2024-01-23T09:02:27.195Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
